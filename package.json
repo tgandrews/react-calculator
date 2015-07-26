@@ -1,0 +1,27 @@
+{
+  "name": "calculator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Simple calculator",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register --recursive",
+    "bundle": "browserify lib/app.js -t babelify --outfile built/assets/bundle.js",
+    "copy-assets": "cp -r assets built/ && cp index.html built/",
+    "clean": "rm -rf built/*",
+    "build": "npm run clean && npm run copy-assets && npm run bundle",
+    "start": "npm run build && cd built && python -m SimpleHTTPServer"
+  },
+  "author": "Tom Andrews <git@tomandrews.co.uk>",
+  "devDependencies": {
+    "babel": "^5.1.13",
+    "babelify": "^6.1.3",
+    "jsdom": "^2.0.0",
+    "mocha": "^2.1.0",
+    "react-tools": "^0.12.1",
+    "sinon": "^1.15.4"
+  },
+  "dependencies": {
+    "flux": "^2.0.3",
+    "react": "^0.12.1"
+  }
+}
