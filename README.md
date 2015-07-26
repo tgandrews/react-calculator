@@ -28,7 +28,7 @@ To run the app you need to run `npm start` and this will:
 1. Finally, it starts a very simple web server on port 8000, so that you can view the app at [http://localhost:8000](http://localhost:8000).
 
 ## To Do - In order of importance:
-1. Remove usage of python SimpleHTTPServer to static files from nginx or apache. Maybe make the app as a docker image.
+1. Remove usage of python SimpleHTTPServer to static files from nginx or apache. Maybe deploy the app as a docker image.
 1. There is no user logging on the server side or client side error tracking. These could both be third party libraries.
 1. Support for landscape phones. Currently it requires a user to scroll to see all of the numpad on some screens.
 1. Testing on windows and mobile phone - this only been tested on a Mac.
