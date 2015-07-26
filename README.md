@@ -22,6 +22,7 @@ Currently there are only unit level tests and no integration tests. Additionally
 
 ## Running the app
 To run the app you need to run `npm start` and this will:
+
 1. Copy all static resources (index.html and assets folder) to the built directory.
 1. Run [browserify](http://browserify.org/) to bundle the JavaScript.
 1. Finally, it starts a very simple web server on port 8000, so that you can view the app at [http://localhost:8000](http://localhost:8000).
